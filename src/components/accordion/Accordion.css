@@ -1,0 +1,56 @@
+.accordion {
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion__wrapper {
+  width: 800px;
+}
+
+.accordion__cta-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+.accordion__cta-buttons button {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+}
+
+.accordion__item {
+  background-color: #fff;
+  padding: 20px 30px;
+  margin: 10px;
+}
+.accordion__toggle-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease-in-out;
+}
+
+.accordion__content.show {
+  max-height: 500px;
+}
